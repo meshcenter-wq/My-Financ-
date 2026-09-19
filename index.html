@@ -2,12 +2,36 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  
   <title>My Finac€</title>
-  <script>
-    window.location.replace("https://script.google.com/macros/s/AKfycbyXCpIPTavRWREuFhjR3bu_Nmn9XwmkSbpDU3skxtrIqaQwxPNhQiNOtY2fmCKH4QB7/exec");
-  </script>
+
+  <!-- Icona e configurazione PWA fullscreen per iOS -->
+  <link rel="apple-touch-icon" href="https://i.imgur.com/SG5W62b.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My Finac€">
+  <meta name="theme-color" content="#000000">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000000;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
 </head>
 <body>
+  <!-- Incolla qui sotto l'URL /exec della tua Web App di Google Apps Script -->
+  <iframe src="https://script.google.com/macros/s/IL_TUO_ID_APPS_SCRIPT/exec"></iframe>
 </body>
 </html>
