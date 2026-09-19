@@ -33,10 +33,12 @@ input, textarea, select {
 }
 
 html { 
-  background-color: #000000 !important; /* Forzato a nero puro per evitare flash bianchi durante il rimbalzo (rubber-band) */
+  background-color: #000000 !important; 
   min-height: 100dvh !important; 
   margin: 0; 
   padding: 0; 
+  padding-bottom: env(safe-area-inset-bottom); /* Spazio dinamico per la gesture bar */
+  box-sizing: border-box; /* Necessario per calcolare correttamente il padding nell'altezza */
   overflow-x: hidden;
 }
 
