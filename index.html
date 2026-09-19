@@ -14,31 +14,31 @@
   <meta name="theme-color" content="#000000">
 
   <style>
-* {
-    box-sizing: border-box;
-  }
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
-    background-color: #000000;
-  }
-  iframe {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100vh;
-    height: 100dvh;
-    border: none;
-    display: block;
-  }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      height: -webkit-fill-available;
+      background-color: #000000;
+      overflow: hidden;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      height: -webkit-fill-available;
+      border: 0;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <!-- Incolla qui sotto l'URL /exec della tua Web App di Google Apps Script -->
-<iframe src="https://script.google.com/macros/s/AKfycbx2vSBboJyKCItaTpI4XceAY-IUARIFb_dhJUPKjfHhVLZH0aQX_oZrGzxuWK5dWXwCoA/exec"></iframe>
+  <iframe src="https://script.google.com/macros/s/AKfycbx2vSBboJyKCItaTpI4XceAY-IUARIFb_dhJUPKjfHhVLZH0aQX_oZrGzxuWK5dWXwCoA/exec"></iframe>
 </body>
 </html>
