@@ -26,16 +26,16 @@
       background-color: #000000;
       overflow: hidden;
     }
-iframe {
-  position: fixed; /* Cambiato da absolute a fixed */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  border: none;
-}
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      height: -webkit-fill-available;
+      border: 0;
+      display: block;
+    }
   </style>
 </head>
 <body>
