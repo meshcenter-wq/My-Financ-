@@ -31,14 +31,19 @@
       top: 0;
       left: 0;
       width: 100%;
+      height: 100%;
       height: 100dvh;
       border: none;
       display: block;
     }
+    body {
+  height: 100%;    /* Fallback per browser datati */
+  height: 100dvh; /* Sovrascrive con l'altezza dinamica sui browser moderni (iOS 15.4+) */
+}
   </style>
 </head>
 <body>
-  <!-- Sostituisci l'URL con l'indirizzo /exec della tua Web App su Google Apps Script -->
+
  
   <iframe src="https://script.google.com/macros/s/AKfycbxBhBCHd_sH5Xs2xAsi545AK1yOzM0dj6I-9wLwVPZnorT6yxcnNHefpFUdYmnjaHjS7g/exec"></iframe>
 </body>
