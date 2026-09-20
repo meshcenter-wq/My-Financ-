@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   
+
   <title>My Finac€</title>
 
-  <!-- PWA iOS Meta Tags -->
+  <!-- Icona e configurazione PWA fullscreen per iOS -->
+  <!-- 1. Questo dice a iOS di guardare le regole del Manifest -->
   <link rel="manifest" href="manifest.json">
+
+  <!-- Icona e configurazione PWA fullscreen legacy per iOS -->
   <link rel="apple-touch-icon" href="https://i.imgur.com/ubzrqlk.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,30 +19,29 @@
   <meta name="theme-color" content="#000000">
 
   <style>
-    html, body {
+    html {
       width: 100%;
-      height: 100dvh; 
-      min-height: 100dvh;
+      height: 100%;
+      overflow: hidden;
       height: -webkit-fill-available;
       background-color: #000000;
-      margin: 0;
-      padding: 0;
       overflow: hidden;
     }
     iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      /* 2. Cambiato in fixed per bloccare la barra di Safari su iOS */
       position: fixed; 
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
       width: 100vw;
-      height: 100dvh;
-      border: none;
+      height: 100vh;
+      border: 0;
       display: block;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbxBhBCHd_sH5Xs2xAsi545AK1yOzM0dj6I-9wLwVPZnorT6yxcnNHefpFUdYmnjaHjS7g/exec"></iframe>
-</body>
-</html>
