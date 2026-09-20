@@ -27,21 +27,15 @@
       background-color: #000000;
       overflow: hidden;
     }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      /* 2. Cambiato in fixed per bloccare la barra di Safari su iOS */
-      position: fixed; 
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100vw;
-      height: 100vh;
-      border: 0;
-      display: block;
-    }
+iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh !important; /* Si adatta dinamicamente all'altezza reale su Safari iOS */
+  border: none;
+  display: block;
+}
   </style>
 </head>
 <body>
