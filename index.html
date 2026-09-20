@@ -14,37 +14,35 @@
   <meta name="theme-color" content="#000000">
 
   <style>
-    /* Reset globale e blocco dello scorrimento per la pagina padre */
+    /* Reset totale dell'area visibile */
     html, body {
       width: 100%;
       height: 100%;
-      height: 100dvh;
+      height: -webkit-fill-available;
       margin: 0;
       padding: 0;
       overflow: hidden;
       background-color: #000000;
     }
 
-    /* Iframe ancorato a tutto schermo ottimizzato per iOS Safari */
+    /* Ancoraggio assoluto ai 4 bordi dello schermo (elimina la fascia nera) */
     iframe {
       position: fixed;
       top: 0;
       left: 0;
+      bottom: 0;
+      right: 0;
       width: 100%;
       height: 100%;
-      height: 100dvh;
+      height: -webkit-fill-available;
       border: none;
+      margin: 0;
+      padding: 0;
       display: block;
     }
-    body {
-  height: 100%;    /* Fallback per browser datati */
-  height: 100dvh; /* Sovrascrive con l'altezza dinamica sui browser moderni (iOS 15.4+) */
-}
   </style>
 </head>
 <body>
-
- 
   <iframe src="https://script.google.com/macros/s/AKfycbxBhBCHd_sH5Xs2xAsi545AK1yOzM0dj6I-9wLwVPZnorT6yxcnNHefpFUdYmnjaHjS7g/exec"></iframe>
 </body>
 </html>
