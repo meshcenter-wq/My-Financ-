@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   
+
   <title>My Finac€</title>
 
+  <!-- Icona e configurazione PWA fullscreen per iOS -->
   <!-- 1. Questo dice a iOS di guardare le regole del Manifest -->
   <link rel="manifest" href="manifest.json">
 
@@ -16,33 +18,41 @@
   <meta name="apple-mobile-web-app-title" content="My Finac€">
   <meta name="theme-color" content="#000000">
 
-  
-<style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html, body {
-    width: 100%;
-    height: 100dvh; /* Usa l'altezza dinamica nativa */
-    background-color: #000000;
-    overflow: hidden;
-  }
-  iframe {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%; /* Sfrutta le coordinate top/bottom/left/right senza forzare vh errati */
-    border: 0;
-    display: block;
-  }
-</style>
+  <style>
+    html, body {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      height: -webkit-fill-available;
+      background-color: #000000;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      /* 2. Cambiato in fixed per bloccare la barra di Safari su iOS */
+      position: fixed; 
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbxBhBCHd_sH5Xs2xAsi545AK1yOzM0dj6I-9wLwVPZnorT6yxcnNHefpFUdYmnjaHjS7g/exec"></iframe>
+  <!-- Incolla qui sotto l'URL /exec della tua Web App di Google Apps Script -->
+<iframe src="https://script.google.com/macros/s/AKfycby2956qhNb0ftq0-I_SRtjNLhOypuK9pEkYIpUJXe_xZvtVdDtGWrv97pLladNfUWZJ7Q/exec"></iframe>
+  <iframe src="https://script.google.com/macros/s/AKfycbyBlqo_a4p0O_uWGuzAKQ-o1roAdWDHzbbJEdK1miIaTomH4BsurXSw0kyOmSVNMOUoJQ/exec"></iframe>
 </body>
 </html>
